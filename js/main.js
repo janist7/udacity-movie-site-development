@@ -21,3 +21,12 @@ $(document).ready(function () {
         $(this).next("div").show("fast", showNext);
     });
 });
+// Add active class when nav button is clicked
+$(document).ready(function () {
+    if ($('span#main').length) {
+        $("ul.navbar-nav li:nth-child(1)").addClass("active");
+    }
+    else if ($('span#upload').length) {
+        $("ul.navbar-nav li:nth-child(2)").addClass("active");
+    }
+});

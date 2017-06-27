@@ -3,6 +3,7 @@ def get_template():
     
     # Styles and scripting for the page
     upload_movies_form = '''
+    <span hidden id="upload"></span>
     <form class="form-horizontal">
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Title:</label>

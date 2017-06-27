@@ -3,6 +3,7 @@ def get_template():
     # The main page layout and title bar
     main_page_content = '''
       <body>
+      <span hidden id="main"></span>
         <!-- Trailer Video Modal -->
         <div class="modal" id="trailer">
           <div class="modal-dialog">
