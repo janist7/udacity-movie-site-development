@@ -1,23 +1,111 @@
----
-layout: default
----
 
-<div class="home">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fresh Tomatoes!</title>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        <!-- Bootstrap 3 -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <!-- Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        <!-- Css/Js -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    
+    <div class="container">
+          <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a class="navbar-nav" href="index.html">Main</a></li>
+                <li><a class="navbar-nav" href="fresh_tomatoes_upload.html">Upload Movie</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+      <body>
+        <!-- Trailer Video Modal -->
+        <div class="modal" id="trailer">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+                <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+              </a>
+              <div class="scale-media" id="trailer-video-container">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Page Content -->
+        <div class="container">
+          
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="220" height="342">
+        <span class="G">G</span>
+        </figure>
+        <h2>Toy Story</h2>
+        <p class="storyline-text">Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.</p>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="3PsUJFEBC74" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg" width="220" height="342">
+        <span class="PG-13">PG-13</span>
+        </figure>
+        <h2>School of Rock</h2>
+        <p class="storyline-text">Overly enthusiastic guitarist Dewey Finn (Jack Black) gets thrown out of his bar band and finds himself in desperate need of work. Posing as a substitute music teacher at an elite private elementary school, he exposes his students to the hard rock gods he idolizes and emulates -- much to the consternation of the uptight principal (Joan Cusack). As he gets his privileged and precocious charges in touch with their inner rock 'n' roll animals, he imagines redemption at a local Battle of the Bands.</p>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="tGgCqGm_6Hs" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" width="220" height="342">
+        <span class="R">R</span>
+        </figure>
+        <h2>The Matrix</h2>
+        <p class="storyline-text">Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.</p>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vZ734NWnAHA" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg" width="220" height="342">
+        <span class="PG">PG</span>
+        </figure>
+        <h2>Star Wars: Episode IV – A New Hope</h2>
+        <p class="storyline-text">The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance and restore freedom and justice to the Galaxy.</p>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="V75dMMIW2B4" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="http://www.movieartarena.com/imgs/lotr1final.jpg" width="220" height="342">
+        <span class="PG-13">PG-13</span>
+        </figure>
+        <h2>The Lord of the Rings: The Fellowship of the Ring</h2>
+        <p class="storyline-text">The future of civilization rests in the fate of the One Ring, which has been lost for centuries. Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of a young Hobbit named Frodo Baggins (Elijah Wood), who inherits the Ring and steps into legend. A daunting task lies ahead for Frodo when he becomes the Ringbearer - to destroy the One Ring in the fires of Mount Doom where it was forged.</p>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="s7EdQ4FqbhY" data-toggle="modal" data-target="#trailer">
+        <figure>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51SKHxkZCNL._SY445_.jpg" width="220" height="342">
+        <span class="R">R</span>
+        </figure>
+        <h2>Pulp Fiction</h2>
+        <p class="storyline-text">Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions. In this ultra-hip, multi-strand crime movie, their storyline is interwoven with those of their boss, gangster Marsellus Wallace (Ving Rhames) ; his actress wife, Mia (Uma Thurman) ; struggling boxer Butch Coolidge (Bruce Willis) ; master fixer Winston Wolfe (Harvey Keitel) and a nervous pair of armed robbers, 'Pumpkin' (Tim Roth) and 'Honey Bunny' (Amanda Plummer).</p>
+    </div>
+    
+        </div>
+      </body>
+    </html>
+    
+    <footer class="container-fluid bg-4 text-center">
+        <p>&copy; Copyright: Janis Tidrikis</p>
+    </footer>
+    

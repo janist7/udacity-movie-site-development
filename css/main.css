@@ -1,0 +1,112 @@
+@media only screen {
+    body {
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+    h2 {
+        font: 500 34px/30px "Roboto", sans-serif;
+    }
+    p {
+        font: 500 17px/24px "Roboto", sans-serif;
+        padding: 15px;
+    }
+    figure {
+        position: relative;
+        display: inline-block;
+    }
+    .G,
+    .PG,
+    .PG-13,
+    .R,
+    NC-17 {
+        display: block;
+        padding: 0 5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+        font: 700 30px/30px "Roboto", sans-serif;
+    }
+    .G {
+        background-color: #00cc00;
+    }
+    .PG {
+        background-color: #ccff66;
+    }
+    .PG-13 {
+        background-color: #ffcc00;
+    }
+    .R {
+        background-color: #ff3300;
+    }
+    .NC-17 {
+        background-color: #000;
+    }
+    #trailer .modal-dialog {
+        margin-top: 200px;
+        width: 640px;
+        height: 480px;
+    }
+    .hanging-close {
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        z-index: 9001;
+    }
+    #trailer-video {
+        width: 100%;
+        height: 100%;
+    }
+    .movie-tile {
+        margin-bottom: 20px;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .movie-tile:hover {
+        background-color: #eee;
+        cursor: pointer;
+    }
+    .scale-media {
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .scale-media iframe {
+        border: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: white;
+    }
+    .bg-4 {
+        background-color: #2f2f2f;
+        color: #ffffff;
+        text-align: center;
+    }
+    .bg-4 p {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 991px) {
+    figure {
+        float: left;
+        margin: 0 30px 0 0;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .storyline-text {
+        margin: 0 0 0 220px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-control,
+    .control-label,
+    button {
+        margin: 0 5%;
+        width: 90%;
+    }
+}
