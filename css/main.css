@@ -115,7 +115,7 @@
     .navbar-nav{
         margin: 5px -15px;
     }
-    .navbar-collapse.collapse{
+    div#myNavbar{
         overflow-x: hidden;
     }
 }
