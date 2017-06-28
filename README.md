@@ -29,7 +29,7 @@ Im also thinging of integrating the second project (portfolio) into this one.
 
 ## Built With
 
----
+Project generated using [jekyll](https://jekyllrb.com/)
 
 ## Contributing
 
