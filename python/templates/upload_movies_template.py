@@ -1,6 +1,6 @@
+"""Contains form template for movie upload"""
 def get_template():
-    '''Contains main template'''
-    
+    """Contains form template"""
     # Styles and scripting for the page
     upload_movies_form = '''
     <span hidden id="upload"></span>
@@ -35,13 +35,13 @@ def get_template():
           <input type="text" class="form-control" id="rating" name="rating" placeholder="Rating from 0 - 3">
         </div>
       </div>
-      <div class="form-group"> 
+      <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="submit" class="btn btn-default">Submit</button>
         </div>
       </div>
       <!--
-      <div class="form-group"> 
+      <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="button" class="btn btn-default">Regenerate content</button>
         </div>
@@ -49,7 +49,6 @@ def get_template():
       -->
     </form>
     '''
-    
     upload_movies_template_subparts = {
         "upload_movies_form":upload_movies_form,
         }

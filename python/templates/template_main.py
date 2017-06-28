@@ -1,6 +1,10 @@
+"""Contains parts of the main template - head, nav and footer"""
+#Uses code from this reposatory:
+#https://github.com/adarsh0806/ud036_StarterCode/blob/master/fresh_tomatoes.py
+
 def get_template():
     '''Contains main template'''
-    
+
     # Styles and scripting for the page
     main_page_head = '''
     <!DOCTYPE html>
@@ -48,7 +52,6 @@ def get_template():
         <p>&copy; Copyright: Janis Tidrikis</p>
     </footer>
     '''
-    
     main_template_subparts = {
         "main_page_head":main_page_head,
         "main_page_navigation":main_page_navigation,

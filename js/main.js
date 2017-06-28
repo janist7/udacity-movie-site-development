@@ -20,9 +20,7 @@ $(document).ready(function () {
     $('.movie-tile').hide().first().show("fast", function showNext() {
         $(this).next("div").show("fast", showNext);
     });
-});
-// Add active class when nav button is clicked
-$(document).ready(function () {
+    // Add active class when nav button is clicked
     if ($('span#main').length) {
         $("ul.navbar-nav li:nth-child(1)").addClass("active");
     }

@@ -112,10 +112,10 @@
     .nav>li>a {
         padding: 10px 25px;
     }
-    .navbar-nav{
+    .navbar-nav {
         margin: 5px -15px;
     }
-    div#myNavbar{
+    div#myNavbar {
         overflow-x: hidden;
     }
 }

@@ -1,3 +1,7 @@
+"""Contains parts for movie list content"""
+#Uses code from this reposatory:
+#https://github.com/adarsh0806/ud036_StarterCode/blob/master/fresh_tomatoes.py
+
 def get_template():
     ''' List movies template '''
     # The main page layout and title bar
@@ -23,8 +27,6 @@ def get_template():
       </body>
     </html>
     '''
-
-
     # A single movie entry html template
     movie_tile_content = '''
     <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
@@ -36,5 +38,8 @@ def get_template():
         <p class="storyline-text">{movie_storyline}</p>
     </div>
     '''
-    list_movies_template_subparts = {"main_page_content":main_page_content,"movie_tile_content":movie_tile_content}
+    list_movies_template_subparts = {
+        "main_page_content":main_page_content,
+        "movie_tile_content":movie_tile_content
+        }
     return list_movies_template_subparts
