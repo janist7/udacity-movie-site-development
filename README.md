@@ -15,9 +15,9 @@ The webpage is started by opening index.html, if no index.html file is present t
 
 ## Structure
 
-Python files are located in the folder - python
-Template files are located in folder - python/templates
-Movies are located in a file called movies.json that is in - python/movies.
+* Python files are located in the folder - python
+* Template files are located in folder - python/templates
+* Movies are located in a file called movies.json that is in - python/movies.
 
 ## Future plans
 
