@@ -45,7 +45,7 @@ Im also thinging of integrating the second project (portfolio) into this one.
 
 ## License
 
-This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPLv3 License - see the [LICENSE.md](https://github.com/janist7/udacity-movie-site/blob/master/LICENSE) file for details
 
 ## Acknowledgments and Thanks
 
