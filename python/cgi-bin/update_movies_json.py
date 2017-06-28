@@ -23,7 +23,7 @@ def add_new_movie(title, storyline, poster_url, youtube_url, rating):
 
 
 def add_movie_to_dictionary(new_movie):
-    """opens movies.json and appends new movie, has one list parameter"""
+    """Opens movies.json and appends new movie, has one list parameter"""
 
     with open('movies/movies.json', 'r') as movies_json:
         movies_dictionary = json.load(movies_json)
