@@ -1,7 +1,11 @@
-# README
+# Movie site
 
 ## Description
 This site displays a list of movies with relevant information and displays a trailer of the movie when a user clicks on it.
+
+## Prerequisites
+
+Requires atleast [Python 2.7.9](https://www.python.org/downloads/release/python-279/)
 
 ## Instalation and usage
 
@@ -22,3 +26,27 @@ An idea was to write code to add new movies from webpage that updates movies.jso
 Tried using native [cgi](https://docs.python.org/2/library/cgi.html) methods but that requires a python cgi capable server and rewriting of templates/code, but flask seems a better alternative.
 
 Im also thinging of integrating the second project (portfolio) into this one.
+
+## Built With
+
+---
+
+## Contributing
+
+---
+
+## Versioning
+
+---
+
+## Authors
+
+* **Jānis Tidriķis** - *Initial work*
+
+## License
+
+This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments and Thanks
+
+* Thanks to Billie Thompson for providing a nice readme [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
