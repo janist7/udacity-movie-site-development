@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#!python
 """Generates movie site html pages"""
 import json
 import media
