@@ -24,4 +24,3 @@ class Movie():
         
     def show_trailer(self):
         open(self.trailer_youtube_url)
-        
