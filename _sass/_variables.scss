@@ -7,13 +7,15 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:       #2d3c49;
+$background-color: #fff;
+$brand-color:      #02b3e4;
 
-$grey-color:       #828282;
+$grey-color:       #7d97ad;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$jumbotron-img: url(http://localhost:4000/img/jumbotron.jpg);
 
 // Width of the content area
 $content-width:    50em; // 800px

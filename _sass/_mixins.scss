@@ -10,3 +10,10 @@
         @content;
     }
 }
+
+@mixin responsive-img($img-height){
+    max-width: 100%;
+    height: $img-height;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
