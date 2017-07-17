@@ -65,7 +65,6 @@
  */
 
 %focusable {
-    @extend %visuallyhidden;
     &:active,
     &:focus {
         clip: auto;
