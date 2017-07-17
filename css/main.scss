@@ -5,35 +5,17 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "base/normalize",
         "helpers/variables",
         "helpers/mixins",
-        "base/normalize",
-        "base/base",
-        "layouts/layout",
         "helpers/syntax-highlighting",
-        "helpers/extendables"
+        "helpers/extendables",
+        "base/base",
+        "modules/footer",
+        "modules/header",
+        "modules/nav",
+        "modules/post"
 ;
-
-/*
-==========================================================================
-   Mobile stiles
-   ========================================================================== */
-
-@import "layouts/mobile";
-
-/*
-==========================================================================
-   Medium screens/tablets and laptops
-   ========================================================================== */
-
-@import "layouts/medium";
-
-/*
-==========================================================================
-   Large screens/desktops, TV etc.
-   ========================================================================== */
-
-@import "layouts/large";
 
 /*
 ==========================================================================
