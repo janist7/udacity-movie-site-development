@@ -52,4 +52,4 @@ This project is licensed under the GPLv3 License - see the [LICENSE.md](https://
 
 ## Acknowledgments and Thanks
 
-* Thanks to Billie Thompson for providing a nice readme [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+Thanks to Billie Thompson for providing a nice readme [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)

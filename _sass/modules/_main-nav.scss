@@ -1,7 +1,7 @@
  /**
  * Site navigation
  */
- 
+
  .main-nav {
      position: absolute;
      top: 12px;
@@ -25,15 +25,18 @@
              }
          }
      }
+
      &-trigger {
          clear: both;
          display: none;
          border-top: 1px solid $grey-color-light;
      }
+
      &:hover &-trigger {
          display: block;
          padding-bottom: 5px;
      }
+
      &-link {
          display: block;
          padding: 5px 10px;
@@ -41,6 +44,7 @@
              margin-right: 0;
          }
      }
+
      @include media-query($medium-screen) {
          position: static;
          float: left;
@@ -51,6 +55,7 @@
          .menu-icon {
              display: none;
          }
+
          &-link {
              display: inline;
              color: $text-color;
@@ -61,15 +66,18 @@
                  margin-right: 20px;
              }
          }
+
          &-trigger {
              clear: both;
              display: block;
              border: none;
              text-align: right;
          }
+
          &:hover &-trigger {
              padding: 0;
          }
+
          &-page-link {
              display: block;
              padding: 5px 10px;
