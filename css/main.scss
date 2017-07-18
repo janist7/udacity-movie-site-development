@@ -13,16 +13,11 @@
         "base/base",
         "layouts/grid",
         "layouts/flex-list",
+        "layouts/wrapper",
+        /*"layouts/print",*/
         "modules/main-nav",
         "modules/footer",
         "modules/header",
         "modules/post",
         "modules/pages"
 ;
-
-/*
-==========================================================================
-   Print view
-   ========================================================================== */
-
-@import "layouts/print";
