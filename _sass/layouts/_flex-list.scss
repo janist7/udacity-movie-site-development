@@ -6,7 +6,8 @@
     flex-direction: row;
     margin: 0;
     justify-content: space-between;
-    &-item {
+    >div,
+    >li {
         flex-grow: 1;
         margin: 2% 0;
     }
