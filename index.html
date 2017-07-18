@@ -4,9 +4,9 @@ layout: main-template
 
 <section class="pages container">
     <h1 class="pages-heading col-12-s col-12-ml">Featured work</h1>
-    <ul class="page-list col-12-s col-12-ml">
+    <ul class="page-list l-flex-container">
         {% for page in site.pages %}
-        <div class="page-item col-12-s col-4-ml">
+        <div class="page-list-item l-flex-container-item">
             <img class="page-list-img" src="{{ page.img | prepend: site.baseurl }}" alt="Appify">
 
             <a class="page-list-title" href="{{ page.url | prepend: site.baseurl }}">
