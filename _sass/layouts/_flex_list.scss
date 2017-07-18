@@ -1,0 +1,13 @@
+.l-flex-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    &-item {
+        flex-grow: 1;
+        margin: 2% 0;
+    }
+}

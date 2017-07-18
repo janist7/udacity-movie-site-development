@@ -1,7 +1,9 @@
+/* Page list in frontpage */
+
 .pages {
     &-heading {
         color: $grey-color;
-        font: 400 26px Arial, san-serif;
+        @include font-styles("large");
         padding: 0 2%;
         margin: 20px 0 10px 0;
     }
@@ -9,26 +11,58 @@
         text-align: center;
         color: $text-color;
         padding: 0;
-        h2 {
-            text-transform: uppercase; 
-        }
         p {
-            font: 400 12px Arial, san-serif;
+            @include font-styles("small");
         }
         &-img {
             @include responsive-img(50vw);
         }
-        &-title {}
-        &-link {}
+        &-title {
+            @include font-styles("medium");
+            text-transform: uppercase;
+            h2 {
+                margin: 10px 0 0 0;
+            }
+        }
+        &-link {
+            p {
+                margin: 0 0 5px 0;
+            }
+        }
         &-item {}
+    }
+}
+
+
+/* Single page from list */
+
+.page {
+    text-align: center;
+    margin: 5% 0;
+    &-img {
+        @include responsive-img(20vw);
+    }
+    &-content {
+        p {
+            text-align: justify;
+            word-break: normal;
+            padding: 0 15px;
+        }
     }
 }
 
 @include media-query($medium-screen) {
     .page-list {
-        &-img{
-            height: auto !important;
+        &-img {
+            height: 25vh !important;
+            max-width: 80vw;
+        }
+    }
+    .page {
+        &-content {
+            p {
+                padding: 0;
+            }
         }
     }
 }
-

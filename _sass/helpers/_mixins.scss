@@ -17,3 +17,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin font-styles($size){
+    font-family: "Quicksand", san-serif;
+    @if $size == "small" {
+        font-size: $small-font-size;
+        font-weight: $font-thin;
+    }
+    @else if $size == "medium" {
+        font-size: $medium-font-size;
+        font-weight: $font-medium;
+    }
+    @else {
+        font-size: $large-font-size;
+        font-weight: $font-medium;
+    }
+}

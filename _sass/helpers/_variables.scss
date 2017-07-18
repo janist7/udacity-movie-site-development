@@ -1,9 +1,16 @@
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Quicksand","Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+// Fonts
+$small-font-size:  1em;
+$medium-font-size: 1.5em;
+$large-font-size: 2em;
+
+$font-thin: 400;
+$font-medium: 500;
 
 $spacing-unit:     30px;
 
@@ -20,5 +27,8 @@ $jumbotron-img: url(http://localhost:4000/img/jumbotron.jpg);
 // Width of the content area
 $content-width:    50em; // 800px
 
-$medium-screen:          37.5em; // 600px
-$large-screen:        50em; // 800px
+// Breakpoints
+$small-screen:          25em; // 400px
+$medium-screen:          46.875em; // 750px
+$large-screen:        62.5em; // 1000px
+$large-hd-screen:       75em; // 1200px;
