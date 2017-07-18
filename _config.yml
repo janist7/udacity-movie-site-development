@@ -30,7 +30,10 @@ includes_dir: _includes
 collections:
   pages:
     output:   true
-    permalink: /pages/:title # to get rid of file names
+    permalink: /pages/:title
+  portfolio:
+    output: true
+    permalink: /portfolio/:title
   posts:
     output: false
 
