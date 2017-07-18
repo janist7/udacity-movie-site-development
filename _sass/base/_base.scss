@@ -96,13 +96,13 @@ h6 {
  */
 
 a {
-    color: $brand-color;
+    color: darken($brand-color, 5%);
     text-decoration: none;
     &:visited {
         color: darken($brand-color, 15%);
     }
     &:hover {
-        color: $text-color;
+        color: lighten($brand-color, 5%);
         text-decoration: underline;
     }
 }

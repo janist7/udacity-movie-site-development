@@ -4,8 +4,9 @@
     &-heading {
         color: $grey-color;
         @include font-styles("large");
+        font-weight: $font-thin;
         padding: 0 2%;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 0 0;
     }
     .page-list {
         text-align: center;
