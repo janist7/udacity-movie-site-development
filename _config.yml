@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.udacity-project-2.com" # the base hostname & protocol for your site
 author: Janis Tidriķis
-author_skill: front-end ninja?
+author_skill: front-end ninja
 twitter_username: "----------"
 github_username:  janist7
 
@@ -30,6 +30,7 @@ includes_dir: _includes
 collections:
   pages:
     output:   true
+    permalink: /pages/:title # to get rid of file names
   posts:
     output: false
 
