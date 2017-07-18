@@ -17,6 +17,7 @@
 .container {
     position: relative;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     @extend %clearfix;
 }
@@ -24,6 +25,7 @@
 [class*="col-"] {
     margin: 0 1%;
     float: left;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     &:first-child {
         margin-left: 0;
