@@ -2,22 +2,23 @@
 layout: main-template
 ---
 
-<div class="home">
+<section class="pages container">
+    <h1 class="pages-heading col-12-s col-12-ml">Featured work</h1>
+    <ul class="page-list col-12-s col-12-ml">
+        {% for page in site.pages %}
+        <div class="page-item col-12-s col-4-ml">
+            <img class="page-list-img" src="{{ page.img | prepend: site.baseurl }}" alt="Appify">
 
-  <h1 class="page-heading">Posts</h1>
+            <a class="page-list-title" href="{{ page.url | prepend: site.baseurl }}">
+                <h2>{{ page.title }}</h2>
+            </a>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+            <a class="page-list-link" href="{{ page.link | prepend: site.baseurl }}">
+                <p>{{ page.link }}</p>
+            </a>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        </div>
+        {% endfor %}
+    </ul>
+</section>
