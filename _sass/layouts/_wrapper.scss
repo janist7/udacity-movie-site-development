@@ -1,17 +1,19 @@
 /**
- * Wrapper
+ * Page wrapper
  */
-.l-centered-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    margin-right: auto;
-    margin-left: auto;
-    @extend %clearfix;
 
-    @include media-query($large-screen) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+.l-page-wrapper {
+    margin: 0;
+}
+
+@include media-query($medium-screen) {
+    .l-page-wrapper {
+        margin: 0 5%;
+    }
+}
+
+@include media-query($large-screen) {
+    .l-page-wrapper {
+        margin: 0 10%;
     }
 }

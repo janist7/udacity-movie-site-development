@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% include browserupdate.html %}
-    {% include header.html %}
-
-    <main>
-    {{ content }}
-    </main>
-
-    {% include footer.html %}
+<body>
+    <section class="l-page-wrapper">
+        {% include browserupdate.html %} 
+        {% include header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %} 
+    </section>
     {% include js.html %}
-  </body>
+</body>
 
 </html>
