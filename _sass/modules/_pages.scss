@@ -30,7 +30,9 @@
                 margin: 0 0 5px 0;
             }
         }
-        &-item {}
+        &-item {
+            list-style: none;
+        }
     }
 }
 

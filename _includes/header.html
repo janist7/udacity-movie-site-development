@@ -9,12 +9,12 @@
         </div>
         <nav class="main-nav col-12-ml">
             {% include icon-hamburger.html %}
-            <div class="main-nav-trigger"> 
+            <div class="main-nav-trigger">
                 {% for page in site.pages %}
                     {% if page.title %}
-                    <a class="main-nav-link" href="{{ page.url }}">
-                        {{ page.title }}
-                    </a> 
+                        <a class="main-nav-link" href="{{ page.url }}">
+                            {{ page.title }}
+                        </a>
                     {% endif %}
                 {% endfor %}
             </div>
