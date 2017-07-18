@@ -7,10 +7,18 @@
             <h1>{{ site.author }}</h1>
             <p>{{ site.author_skill }}</p>
         </div>
-        <!-- <nav class="site-header-nav">
+        <nav class="main-nav col-12-ml">
             {% include icon-hamburger.html %}
-            <div class="trigger"> {% for page in site.pages %} {% if page.title %} <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ page.title }}</a> {% endif %} {% endfor %} </div>
-        </nav> -->
+            <div class="main-nav-trigger"> 
+                {% for page in site.pages %}
+                    {% if page.title %}
+                    <a class="main-nav-link" href="{{ page.url }}">
+                        {{ page.title }}
+                    </a> 
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </nav>
     </div>
     <hr>
     <div class="jumbotron"></div>
