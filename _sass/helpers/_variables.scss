@@ -1,5 +1,4 @@
 // Our variables
-$url: "https://janist7.github.io/udacity-movie-site-development";
 $base-font-family: "Quicksand","Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -23,7 +22,7 @@ $grey-color:       #7d97ad;
 $grey-color-light: lighten($grey-color, 10%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$jumbotron-img: url($url/img/jumbotron.jpg);
+$jumbotron-img: url(https://janist7.github.io/udacity-movie-site-development/img/jumbotron.jpg);
 
 // Width of the content area
 $content-width:    50em; // 800px
