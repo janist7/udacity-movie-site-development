@@ -72,7 +72,7 @@ show_dir_listing: false
 # Outputting
 permalink:     date
 paginate_path: /page:num
-timezone:      null
+timezone:      Europe/Helsinki
 
 quiet:    false
 verbose:  false
