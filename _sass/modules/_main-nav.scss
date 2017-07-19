@@ -1,0 +1,90 @@
+ /**
+ * Site navigation
+ */
+
+ .main-nav {
+     position: absolute;
+     top: 12px;
+     right: 12px;
+     background-color: $background-color;
+     border: 1px solid $grey-color-light;
+     border-radius: 5px;
+     text-align: right;
+     .menu-icon {
+         float: right;
+         width: 36px;
+         height: 26px;
+         line-height: 0;
+         padding-top: 10px;
+         text-align: center;
+         >svg {
+             width: 18px;
+             height: 15px;
+             path {
+                 fill: $grey-color-dark;
+             }
+         }
+     }
+
+     &-trigger {
+         clear: both;
+         display: none;
+         border-top: 1px solid $grey-color-light;
+     }
+
+     &:hover &-trigger {
+         display: block;
+         padding-bottom: 5px;
+     }
+
+     &-link {
+         display: block;
+         padding: 5px 10px;
+         &:not(:last-child) {
+             margin-right: 0;
+         }
+     }
+
+     @include media-query($medium-screen) {
+         position: static;
+         float: left;
+         margin-top: 10px;
+         line-height: 30px;
+         clear: left;
+         border: none;
+         .menu-icon {
+             display: none;
+         }
+
+         &-link {
+             display: inline;
+             color: $text-color;
+             padding: 0;
+             line-height: $base-line-height;
+             // Gaps between nav items, but not on the last one
+             &:not(:last-child) {
+                 margin-right: 20px;
+             }
+         }
+
+         &-trigger {
+             clear: both;
+             display: block;
+             border: none;
+             text-align: right;
+         }
+
+         &:hover &-trigger {
+             padding: 0;
+         }
+
+         &-page-link {
+             display: block;
+             padding: 5px 10px;
+             &:not(:last-child) {
+                 margin-right: 0;
+             }
+             margin-left: 20px;
+         }
+     }
+ }

@@ -1,4 +1,8 @@
-# Portfolio page
+---
+layout: page
+title: Readme
+permalink: pages/readme/
+---
 
 ## Description
 

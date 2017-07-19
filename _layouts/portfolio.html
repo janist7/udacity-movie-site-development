@@ -1,0 +1,14 @@
+---
+layout: main-template
+---
+<article class="page container">
+
+    <div class="col-12-s col-12-ml">
+        <img class="page-img" src="{{ page.img | prepend: '/' }}" alt="{{ page.title }}">
+    </div>
+
+    <div class="page-content col-12-s col-12-ml" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+</article>

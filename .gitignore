@@ -2,3 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 _pycache_
+*.old
+__pycache__

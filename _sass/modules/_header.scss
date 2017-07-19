@@ -1,0 +1,43 @@
+/**
+ * Site header
+ */
+
+.site-header {
+    &-title {}
+    &-author {
+        text-align: center;
+        margin-right: 0;
+        h1 {
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+    &-logo {
+        margin-top: 2em;
+        text-align: center;
+    }
+}
+
+.jumbotron {
+    @include responsive-img(47vw);
+    max-height: 34em;
+    background-image: $jumbotron-img;
+}
+
+@include media-query($medium-screen) {
+    .site-header {
+
+        &-author {
+            text-align: right;
+        }
+
+        &-logo {
+            text-align: left;
+        }
+    }
+}

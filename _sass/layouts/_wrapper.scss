@@ -1,0 +1,19 @@
+/**
+ * Page wrapper
+ */
+
+.l-page-wrapper {
+    margin: 0;
+}
+
+@include media-query($medium-screen) {
+    .l-page-wrapper {
+        margin: 0 5%;
+    }
+}
+
+@include media-query($large-screen) {
+    .l-page-wrapper {
+        margin: 0 10%;
+    }
+}

@@ -1,0 +1,89 @@
+/* Page list in frontpage */
+
+.pages {
+
+    &-heading {
+        color: $grey-color;
+        @include font-styles("large");
+        font-weight: $font-thin;
+        padding: 0 2%;
+        margin: 20px 0 0 0;
+    }
+
+    .page-list {
+        text-align: center;
+        color: $text-color;
+        padding: 0;
+        p {
+            @include font-styles("small");
+        }
+
+        &-img {
+            @include responsive-img(50vw);
+        }
+
+        &-title {
+            @include font-styles("medium");
+            text-transform: uppercase;
+            h3 {
+                margin: 10px 0 0 0;
+            }
+        }
+
+        &-link {
+            p {
+                margin: 0 0 5px 0;
+            }
+        }
+
+        &-item {
+            list-style: none;
+        }
+    }
+}
+
+/* Single page from list */
+
+.page {
+    text-align: center;
+    margin: 5% 0;
+
+    &-img {
+        @include responsive-img(20vw);
+    }
+
+    &-content {
+        p {
+            text-align: justify;
+            word-break: normal;
+            padding: 0 15px;
+        }
+    }
+}
+
+@include media-query($medium-screen) {
+
+    .page-list {
+        &-img {
+            height: 20vw !important;
+            max-width: 80vw;
+        }
+    }
+
+    .page {
+        &-content {
+            p {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@include media-query($large-screen) {
+        .page-list {
+        &-img {
+            height: 25vw !important;
+        }
+    }
+}
+
