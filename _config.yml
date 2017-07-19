@@ -30,10 +30,10 @@ includes_dir: _includes
 collections:
   pages:
     output:   true
-    permalink: /pages/:title
+    permalink: /udacity-movie-site-development/pages/:title
   portfolio:
     output: true
-    permalink: /portfolio/:title
+    permalink: /udacity-movie-site-development/portfolio/:title
   posts:
     output: false
 
