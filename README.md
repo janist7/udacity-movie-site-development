@@ -12,7 +12,10 @@ Page should be accesible at - http://localhost:4000.
 
 ## Instalation and usage
 
-The webpage can be accessed at - [https://github.com/janist7/udacity-movie-site](https://github.com/janist7/udacity-movie-site)
+For now the webpage can be accessed at - [https://janist7.github.io/udacity-movie-site-development/](https://janist7.github.io/udacity-movie-site-development/)
+For use locally in _config.yml - baseurl needs to be set to "/" and url to
+http://localhost:4000 so that links work.
+Url needs to be changed in _variables.scss for jumbotron image.
 
 ## File structure
 
