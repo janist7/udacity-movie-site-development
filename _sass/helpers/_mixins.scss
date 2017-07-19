@@ -5,12 +5,14 @@
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+
 /* Default is mobile, could use seperate css for desktop, so that css file is smaller*/
 @mixin media-query($device) {
     @media only screen and (min-width: $device) {
         @content;
     }
 }
+
 /* Passed as vw so that images resize according to available space*/
 @mixin responsive-img($img-height){
     max-width: 100%;
@@ -18,6 +20,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* For now creates standart css for small,medium, and large text, even though last is else, large should be passed in argument*/
 @mixin font-styles($size){
     font-family: "Quicksand", san-serif;
