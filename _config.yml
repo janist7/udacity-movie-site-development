@@ -30,10 +30,10 @@ includes_dir: _includes
 collections:
   pages:
     output:   true
-    permalink: pages/:title
+    permalink: /udacity-movie-site-development/pages/:title # pages need  added base url
   portfolio:
     output: true
-    permalink: portfolio/:title
+    permalink: portfolio/:title # base url is added in portfolio.html
   posts:
     output: false
 
