@@ -11,6 +11,8 @@ This site is a portfolio page containing links to all my future work.
 ### Prerequisites
 
 For usage on a local enviroment requires [jekyll](https://jekyllrb.com/).
+Then navigate to project file location and run ```jekyll serve```
+Page should be accesible at - http://localhost:4000.
 
 ## Instalation and usage
 
