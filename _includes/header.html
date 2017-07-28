@@ -12,7 +12,7 @@
             <div class="main-nav-trigger">
                 {% for page in site.pages %}
                     {% if page.title %}
-                        <a class="main-nav-link" href="{{ page.url | prepend: site.url }}">
+                        <a class="main-nav-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
                             {{ page.title }}
                         </a>
                     {% endif %}

@@ -7,9 +7,9 @@ layout: main-template
     <ul class="page-list l-flex-container">
         {% for page in site.portfolio %}
         <li class="page-list-item">
-            <img class="page-list-img" src="{{ page.img | prepend: site.baseurl }}" alt="Appify">
+            <img class="page-list-img" src="{{ page.img | prepend: site.baseurl | prepend: site.url }}" alt="Appify">
 
-            <a class="page-list-title" href="{{ page.url | prepend: site.url }}">
+            <a class="page-list-title" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
                 <h3>{{ page.title }}</h3>
             </a>
 
