@@ -1,6 +1,13 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+/* ==========================================================================
+   Variable with liquid path (Liquid expressions for css need to be only in main scss file)
+   ========================================================================== */
+$jumbotron-img: url({{"img/jumbotron.jpg" | prepend: site.baseurl | prepend: site.url }});
+/* ==========================================================================
+   ========================================================================== */
+
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
