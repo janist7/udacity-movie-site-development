@@ -9,12 +9,12 @@ layout: main-template
         <li class="page-list-item">
             <img class="page-list-img" src="{{ page.img | prepend: site.baseurl }}" alt="Appify">
 
-            <a class="page-list-title" href="{{ page.url | prepend: site.baseurl }}">
+            <a class="page-list-title" href="{{ page.url | prepend: site.url }}">
                 <h3>{{ page.title }}</h3>
             </a>
 
 
-            <a class="page-list-link" href="{{ page.link | prepend: site.baseurl }}">
+            <a class="page-list-link" href="{{ page.link }}">
                 <p>{{ page.link }}</p>
             </a>
 
